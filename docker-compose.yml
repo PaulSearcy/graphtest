@@ -3,6 +3,7 @@ services:
   mysql:
     image: mysql:8.0.26
     container_name: test_mysql
+    env_file: 'mysql.env'
     ports:
       - "3306:3306"
     volumes:
