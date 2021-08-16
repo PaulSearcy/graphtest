@@ -1,0 +1,16 @@
+version: '2.4'
+services:
+  mysql:
+    image: mysql:8.0.26
+    container_name: test_mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ~/mydb:/var/lib/mysql
+  mongo:
+    image: mongo:5.0.2
+    container_name: test_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ~/mongodb:/data/db
