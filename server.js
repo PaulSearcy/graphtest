@@ -25,14 +25,14 @@ const main = async () => {
 
     debugger
     var schema = buildSchema(`
-    type Employee {
-        emp_no: ID!,
-        birth_date: Int,
-        first_name: String,
-        last_name: String,
-        gender: String,
-        hire_date: Int,
-    }
+        type Employee {
+            emp_no: ID!,
+            birth_date: Int,
+            first_name: String,
+            last_name: String,
+            gender: String,
+            hire_date: Int,
+        }
     `);
 
     // The root provides a resolver function for each API endpoint
