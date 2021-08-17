@@ -1,6 +1,6 @@
 import GraphQLJSON from "graphql-type-json";
 
-import Employee, { Employee as EmployeeRest } from "./Employee/resolver";
+import Employee, { Employee as EmployeeRest } from "./Employee/resolver.js";
 
 const { Query: EmployeeQuery, Mutation: EmployeeMutation } = Employee;
 

@@ -7,14 +7,15 @@ import {
   dbHelpers,
   resolverHelpers
 } from "mongo-graphql-starter";
-import hooksObj from "../hooks";
+// import starter from "mongo-graphql-starter";
+import hooksObj from "../hooks.js";
 const runHook = processHook.bind(this, hooksObj, "Employee");
 const { decontructGraphqlQuery, cleanUpResults, dataLoaderId } = queryUtilities;
 const { setUpOneToManyRelationships, newObjectFromArgs } = insertUtilities;
 const { getMongoProjection, parseRequestedFields } = projectUtilities;
 const { getUpdateObject, setUpOneToManyRelationshipsForUpdate } = updateUtilities;
 import { ObjectId } from "mongodb";
-import EmployeeMetadata from "./Employee";
+import EmployeeMetadata from "./Employee.js";
 
 async function loadEmployees(db, aggregationPipeline, root, args, context, ast) {
   await processHook(hooksObj, "Employee", "queryPreAggregate", aggregationPipeline, { db, root, args, context, ast });

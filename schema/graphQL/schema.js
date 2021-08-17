@@ -1,4 +1,4 @@
-import { query as EmployeeQuery, mutation as EmployeeMutation, type as EmployeeType } from "./Employee/schema";
+import { query as EmployeeQuery, mutation as EmployeeMutation, type as EmployeeType } from "./Employee/schema.js";
 
 export default `
 
